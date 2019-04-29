@@ -1,0 +1,9 @@
+{
+  "name": "movieql2",
+  "version": "1.0.0",
+  "description": "Movie API my first GraphQL Server",
+  "main": "index.js",
+  "repository": "https://github.com/n00nietzsche/movieql",
+  "author": "Jake Seo",
+  "license": "MIT"
+}
