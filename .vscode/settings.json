@@ -1,0 +1,5 @@
+{
+  "prettier.bracketSpacing": true,
+  "prettier.singleQuote": true,
+  "prettier.semi": true
+}

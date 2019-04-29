@@ -1,0 +1,34 @@
+type Person {
+  id: Int!
+  name: String!
+  age: Int!
+  gender: String!
+}
+
+type Movie {
+  id: Int!
+  name: String!
+  score: Float!
+}
+
+type MovieFromAPI {
+  id: Int!
+  title: String!
+  rating: Float!
+  summary: String
+  language: String
+  medium_cover_image: String!
+}
+
+type Query {
+  movies: [Movie]
+  movie(id: Int!): Movie
+  people: [Person]!
+  person(id: Int!): Person
+  moviesFromAPI(limit: Int!, rating: Float): [MovieFromAPI]
+}
+
+type Mutation {
+  addMovie(name: String!, score: Float): Movie!
+  deleteMovie(id: Int!): Boolean!
+}
